@@ -2,17 +2,27 @@ linux comandos
 
 ip a => vai aparecer o ip inet 127.0.0.1/8
 
-pwd => informa aonde eu estou diretorio
 
 cd / => para ir para raiz
-
 cd pasta => basta digitar cd nome da pasta para entrar
-
 cd .. => para voltar uma pasta
+cd: muda o diretório atual para o diretório especificado.
+ls: lista os arquivos e diretórios no diretório atual.
+pwd: exibe o caminho do diretório atual.
+mkdir: cria um novo diretório.
+touch: cria um novo arquivo vazio ou atualiza a data de modificação de um arquivo existente.
+rm: exclui um arquivo ou diretório.
+cp: copia um arquivo ou diretório de um local para outro.
+mv: move ou renomeia um arquivo ou diretório.
+cat: exibe o conteúdo de um arquivo.
+less: exibe o conteúdo de um arquivo de forma paginada.
+head: exibe as primeiras linhas de um arquivo.
+tail: exibe as últimas linhas de um arquivo.
+grep: procura por uma string ou padrão em um arquivo.
+find: procura por arquivos ou diretórios que correspondem a um padrão.
+chmod: altera as permissões de acesso a um arquivo ou diretório.
+chown: altera o proprietário de um arquivo ou diretório.
 
-ls => listar diretorios
-
-mkdir Nome_da_pasta => criar pasta
 
 useradd -help => abri os comandos possiveis
 
