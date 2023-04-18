@@ -36,25 +36,24 @@ route: exibe ou altera a tabela de roteamento do sistema.
 netstat: exibe informações sobre as conexões de rede ativas do sistema.
 traceroute: exibe a rota que os pacotes de rede levam até um sistema remoto.
 ssh-keygen: gera um par de chaves pública e privada para uso com o SSH.
+scp: copia arquivos de ou para outro sistema remoto por meio de uma conexão segura.
+rsync: copia arquivos de ou para outro sistema remoto de forma eficiente.
+ping: testa a conectividade com um sistema remoto.
+ifconfig: exibe informações sobre as interfaces de rede do sistema.
+route: exibe ou altera a tabela de roteamento do sistema.
+netstat: exibe informações sobre as conexões de rede ativas do sistema.
+traceroute: exibe a rota que os pacotes de rede levam até um sistema remoto.
+ssh-keygen: gera um par de chaves pública e privada para uso com o SSH.
 
 
 useradd -help => abri os comandos possiveis
-
 useradd joao => cria um novo usuario
-
 useradd joao -m -c "Jodo da Silva" -s /bin/bash => cria um novo usuario (-m cria um diretorio) (-c cria um nome do usuario "Jodo da Silva") (-s define o shell)
-
 passwd joao => para cria a senha
-
 su joao => para entrar na conta
-
-usermod joao -e 19/09/2023 => usermod nome do usuario para fazer alguma modificaçao (-e para dar acesso ate 19/09/2023 
-
- 
-useradd convidadol -c “Convidado especial" -s /bin/bash -m -p $(openssl passwd -crypt Senhal23) => já cria tudo 
-
+usermod joao -e 19/09/2023 => usermod nome do usuario para fazer alguma modificaçao (-e para dar acesso ate 19/09/2023
+useradd convidadol -c “Convidado especial" -s /bin/bash -m -p $(openssl passwd -crypt Senhal23) => já cria tudo
 useradd rodrigo “Rodrigo Silva" -m -s /bin/bash -p $(openssl passwd -crypt Senhal23) -G GRP_ADM => cria usuario e indica o grupo
-
 usermod -G GRP_ADM joao =>para add um usuario existente no grupo
 
 groupadd GRP_ADM => criar grupo
