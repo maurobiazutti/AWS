@@ -22,6 +22,20 @@ grep: procura por uma string ou padrão em um arquivo.
 find: procura por arquivos ou diretórios que correspondem a um padrão.
 chmod: altera as permissões de acesso a um arquivo ou diretório.
 chown: altera o proprietário de um arquivo ou diretório.
+ps: exibe os processos em execução.
+kill: encerra um processo.
+top: exibe informações sobre os processos em execução.
+tar: cria ou extrai arquivos compactados no formato tar.
+gzip: compacta ou descompacta arquivos no formato gzip.
+ssh: estabelece uma conexão segura com outro sistema remoto.
+scp: copia arquivos de ou para outro sistema remoto por meio de uma conexão segura.
+rsync: copia arquivos de ou para outro sistema remoto de forma eficiente.
+ping: testa a conectividade com um sistema remoto.
+ifconfig: exibe informações sobre as interfaces de rede do sistema.
+route: exibe ou altera a tabela de roteamento do sistema.
+netstat: exibe informações sobre as conexões de rede ativas do sistema.
+traceroute: exibe a rota que os pacotes de rede levam até um sistema remoto.
+ssh-keygen: gera um par de chaves pública e privada para uso com o SSH.
 
 
 useradd -help => abri os comandos possiveis
