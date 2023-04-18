@@ -2,7 +2,6 @@ linux comandos
 
 ip a => vai aparecer o ip inet 127.0.0.1/8
 
-
 cd / => para ir para raiz
 cd pasta => basta digitar cd nome da pasta para entrar
 cd .. => para voltar uma pasta
@@ -44,7 +43,6 @@ route: exibe ou altera a tabela de roteamento do sistema.
 netstat: exibe informações sobre as conexões de rede ativas do sistema.
 traceroute: exibe a rota que os pacotes de rede levam até um sistema remoto.
 ssh-keygen: gera um par de chaves pública e privada para uso com o SSH.
-
 
 useradd -help => abri os comandos possiveis
 useradd joao => cria um novo usuario

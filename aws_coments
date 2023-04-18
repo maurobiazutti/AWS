@@ -1,0 +1,22 @@
+Comandos AWS
+
+aws configure: Usado para configurar as credenciais da AWS, incluindo a chave de acesso e a chave secreta.
+
+aws ec2: Usado para gerenciar as instâncias EC2, incluindo a criação, exclusão e modificação de instâncias.
+
+aws s3: Usado para gerenciar objetos no Amazon S3, incluindo o upload, download, exclusão e listagem de objetos.
+
+aws iam: Usado para gerenciar as identidades e acessos na AWS, incluindo a criação de usuários, grupos e políticas.
+
+aws lambda: Usado para gerenciar funções Lambda, incluindo a criação, exclusão e execução de funções.
+
+aws cloudformation: Usado para gerenciar recursos de infraestrutura como código, incluindo a criação, exclusão e atualização de pilhas CloudFormation.
+
+aws rds: Usado para gerenciar instâncias de banco de dados RDS, incluindo a criação, exclusão e modificação de instâncias.
+
+aws route53: Usado para gerenciar DNS, incluindo a criação e modificação de zonas DNS e registros.
+
+aws ecs: Usado para gerenciar clusters do Amazon ECS, incluindo a criação, exclusão e modificação de clusters.
+
+aws elb: Usado para gerenciar balanceadores de carga, incluindo a criação, exclusão e modificação de balanceadores de carga.
+
