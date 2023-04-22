@@ -2,6 +2,9 @@ linux comandos
 
 ip a => vai aparecer o ip inet 127.0.0.1/8
 
+sudo cat /etc/os-release => Para ver a configurações do sistema
+
+
 cd / => para ir para raiz
 cd pasta => basta digitar cd nome da pasta para entrar
 cd .. => para voltar uma pasta
