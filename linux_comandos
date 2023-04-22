@@ -4,6 +4,21 @@ ip a => vai aparecer o ip inet 127.0.0.1/8
 
 sudo cat /etc/os-release => Para ver a configurações do sistema
 
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt dist-upgrade
+sudo apt autoremove
+sudo apt autoclean
+sudo apt clean
+
+link virtual box
+https://www.virtualbox.org/wiki/Linux_Downloads
+
+link youtuby
+https://www.youtube.com/watch?v=yTihvAaaxpU&t=693s
+
+
 
 cd / => para ir para raiz
 cd pasta => basta digitar cd nome da pasta para entrar
