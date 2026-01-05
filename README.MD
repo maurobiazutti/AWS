@@ -2,7 +2,7 @@
 
 Este repositório documenta meu aprendizado em Linux com foco em backend.
 
-## 📚 Conteúdo
+## Conteúdo
 
 ### 🟢 Básico
 - Introdução
@@ -22,11 +22,11 @@ Este repositório documenta meu aprendizado em Linux com foco em backend.
 - Nginx
 - Deploy
 
-## 🎯 Objetivo
+## Objetivo
 
 Aprender Linux de forma prática, focado no dia a dia de um desenvolvedor backend.
 
-## 🚀 Progresso
+## Progresso
 
 - [x] Básico
 - [ ] Intermediário
