@@ -1,75 +1,68 @@
-linux comandos 
+# Guia de Comandos Essenciais do Linux
 
-ip a => vai aparecer o ip inet 127.0.0.1/8
+Este guia cobre os comandos fundamentais para navegação e manipulação de arquivos via terminal (CLI).
 
-sudo cat /etc/os-release => Para ver a configurações do sistema
+---
 
-#Atualização do linux
-    sudo apt update
-    sudo apt upgrade
-    sudo apt full-upgrade
-    sudo apt dist-upgrade
-    sudo apt autoremove
-    sudo apt autoclean
-    sudo apt clean
+## 1. Navegação no Sistema
+Antes de manipular arquivos, você precisa saber onde está e como se mover.
+
+| Comando | Descrição | Exemplo de Uso |
+| :--- | :--- | :--- |
+| `pwd` | Exibe o caminho completo do diretório atual. | `pwd` |
+| `ls` | Lista arquivos e diretórios. | `ls -la` (lista tudo, incluindo ocultos e detalhes) |
+| `cd` | Entra em um diretório. | `cd Documents/projetos` |
+| `cd ..` | Volta um nível na hierarquia de pastas. | `cd ..` |
+
+---
+
+## 2. Manipulação de Arquivos e Pastas
+Comandos para criar, mover e remover elementos do sistema.
 
 
 
-cd / => para ir para raiz
-cd pasta => basta digitar cd nome da pasta para entrar
-cd .. => para voltar uma pasta
-cd: muda o diretório atual para o diretório especificado.
-ls: lista os arquivos e diretórios no diretório atual.
-pwd: exibe o caminho do diretório atual.
-mkdir: cria um novo diretório.
-touch: cria um novo arquivo vazio ou atualiza a data de modificação de um arquivo existente.
-rm: exclui um arquivo ou diretório.
-cp: copia um arquivo ou diretório de um local para outro.
-mv: move ou renomeia um arquivo ou diretório.
-cat: exibe o conteúdo de um arquivo.
-less: exibe o conteúdo de um arquivo de forma paginada.
-head: exibe as primeiras linhas de um arquivo.
-tail: exibe as últimas linhas de um arquivo.
-grep: procura por uma string ou padrão em um arquivo.
-find: procura por arquivos ou diretórios que correspondem a um padrão.
-chmod: altera as permissões de acesso a um arquivo ou diretório.
-chown: altera o proprietário de um arquivo ou diretório.
-ps: exibe os processos em execução.
-kill: encerra um processo.
-top: exibe informações sobre os processos em execução.
-tar: cria ou extrai arquivos compactados no formato tar.
-gzip: compacta ou descompacta arquivos no formato gzip.
-ssh: estabelece uma conexão segura com outro sistema remoto.
-scp: copia arquivos de ou para outro sistema remoto por meio de uma conexão segura.
-rsync: copia arquivos de ou para outro sistema remoto de forma eficiente.
-ping: testa a conectividade com um sistema remoto.
-ifconfig: exibe informações sobre as interfaces de rede do sistema.
-route: exibe ou altera a tabela de roteamento do sistema.
-netstat: exibe informações sobre as conexões de rede ativas do sistema.
-traceroute: exibe a rota que os pacotes de rede levam até um sistema remoto.
-ssh-keygen: gera um par de chaves pública e privada para uso com o SSH.
-scp: copia arquivos de ou para outro sistema remoto por meio de uma conexão segura.
-rsync: copia arquivos de ou para outro sistema remoto de forma eficiente.
-ping: testa a conectividade com um sistema remoto.
-ifconfig: exibe informações sobre as interfaces de rede do sistema.
-route: exibe ou altera a tabela de roteamento do sistema.
-netstat: exibe informações sobre as conexões de rede ativas do sistema.
-traceroute: exibe a rota que os pacotes de rede levam até um sistema remoto.
-ssh-keygen: gera um par de chaves pública e privada para uso com o SSH.
+* **`touch`**: Cria um arquivo vazio ou atualiza a data de modificação.
+    * *Exemplo:* `touch notas.txt`
+* **`mkdir`**: Cria uma nova pasta (diretório).
+    * *Exemplo:* `mkdir novo_projeto`
+* **`cp`**: Copia arquivos ou diretórios.
+    * *Exemplo:* `cp arquivo.txt copia_arquivo.txt`
+    * *Dica:* Use `cp -r` para copiar pastas inteiras.
+* **`mv`**: Move ou renomeia arquivos/pastas.
+    * *Exemplo (Mover):* `mv foto.jpg Imagens/`
+    * *Exemplo (Renomear):* `mv nome_antigo.txt nome_novo.txt`
+* **`rm`**: Remove arquivos. **Cuidado: Não há lixeira no terminal!**
+    * *Exemplo:* `rm arquivo.txt`
+    * *Dica:* Use `rm -rf` para forçar a exclusão de pastas (use com extrema cautela).
 
-useradd -help => abri os comandos possiveis
-useradd joao => cria um novo usuario
-useradd joao -m -c "Jodo da Silva" -s /bin/bash => cria um novo usuario (-m cria um diretorio) (-c cria um nome do usuario "Jodo da Silva") (-s define o shell)
-passwd joao => para cria a senha
-su joao => para entrar na conta
-usermod joao -e 19/09/2023 => usermod nome do usuario para fazer alguma modificaçao (-e para dar acesso ate 19/09/2023
-useradd convidadol -c “Convidado especial" -s /bin/bash -m -p $(openssl passwd -crypt Senhal23) => já cria tudo
-useradd rodrigo “Rodrigo Silva" -m -s /bin/bash -p $(openssl passwd -crypt Senhal23) -G GRP_ADM => cria usuario e indica o grupo
-usermod -G GRP_ADM joao =>para add um usuario existente no grupo
+---
 
-groupadd GRP_ADM => criar grupo
-groupdel GRP_ADM => DELETE GRUPO
+## 3. Visualização de Conteúdo
+Para ler o que está dentro dos arquivos sem precisar abrir um editor de texto.
 
-userdel -f joao => deleta usuario
+* **`cat`**: Exibe todo o conteúdo do arquivo de uma vez no terminal.
+    * *Uso:* `cat config.conf`
+* **`less`**: Abre o arquivo para leitura permitindo rolar (melhor para arquivos grandes).
+    * *Uso:* `less log_do_sistema.log` (aperte `q` para sair).
+* **`head`**: Exibe as primeiras 10 linhas de um arquivo.
+    * *Uso:* `head lista.txt`
+* **`tail`**: Exibe as últimas 10 linhas de um arquivo.
+    * *Uso:* `tail -f logs.txt` (o `-f` mantém o terminal seguindo o arquivo em tempo real, ótimo para monitorar logs).
 
-lsblk => paa ver os discos "HD" disponivel
+---
+
+## 4. Comandos Complementares (Bônus Importantes)
+Como você está estudando para o nível pleno e foca em backend, estes são indispensáveis:
+
+| Comando | Função | Por que é importante? |
+| :--- | :--- | :--- |
+| `grep` | Busca texto dentro de arquivos. | `grep "erro" log.txt` ajuda a achar bugs rápido. |
+| `find` | Busca arquivos no sistema. | Localizar aquele script perdido. |
+| `chmod` | Altera permissões de arquivos. | Necessário para tornar scripts executáveis (`chmod +x`). |
+| `sudo` | Executa comandos com privilégios de root. | Instalação de pacotes e alteração de arquivos do sistema. |
+| `history` | Mostra os últimos comandos digitados. | Útil para repetir um comando complexo que você esqueceu. |
+
+---
+
+### Dica de Produtividade:
+Sempre utilize a tecla **TAB** enquanto digita o nome de uma pasta ou arquivo. O terminal completará o nome automaticamente para você, evitando erros de digitação e economizando tempo.
